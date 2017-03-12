@@ -14,27 +14,27 @@
 
 <body>
 <div class="container-fluid">
-	 <form action="" method="" class="register-form">
+	 <form class="register-form">
          <h1>Discretization</h1>
       <div class="row">
-           <div class="col-md-4 col-sm-4 col-lg-4">
+           <div class="col-md-4">
               <label>x<sub>k</sub></label>
-               <input id='xArray' name="xArray" class="form-control" type="data">
+               <input id='xArray' name="xArray" class="form-control" type="data" placeholder="1,2,3">
            </div>
       </div>
       <div class="row">
-           <div class="col-md-4 col-sm-4 col-lg-4">
+           <div class="col-md-4">
               <label>y<sub>k</sub></label>
-               <input id='yArray' name="yArray" class="form-control" type="data">
+               <input id='yArray' name="yArray" class="form-control" type="data" placeholder="1,3,5">
            </div>
       </div><br />
       <div class="row">
-          <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
-           <button id='buttonResult' class="btn btn-default applyButton">Get results</button>
+          <div class="col-md-4">
+           <button id='buttonResult' class="btn btn-default applyButton" onclick="getData()">Get results</button>
           </div>
       </div>
       <div class="row">
-           <div class="col-md-4 col-sm-4 col-lg-4">
+           <div class="col-md-4">
               <label>{f<sub>m</sub>}</label>
                <textarea id='result' class="form-control"></textarea>
            </div>
