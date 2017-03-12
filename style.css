@@ -1,0 +1,61 @@
+body, html{
+    background-color:#232832;
+    font-family: monospace, sans-serif;
+    font-size: 18px;
+
+}
+
+h1, p{
+    text-align: center;
+    color: white;
+}
+
+#result{
+    margin-bottom: 5px;
+    width: 430px;
+    height: 40px;
+    min-width: 430px;
+    max-width: 430px;
+    min-height: 40px;
+    border-radius: 0px;
+}
+
+.register-form{
+    font-size: 16px;
+    left: 50%;
+    top: 45%;
+    position: absolute;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.applyButton{
+    height: 50px;
+    width: 430px;
+    background-color:yellowgreen;
+    border-radius: 0px;
+    font-size: 18px;
+    color:white;
+    border: none !important;
+    margin-bottom: 5px;
+}
+.applyButton:hover{
+    color: white;
+    background-color:darkolivegreen;
+}
+.applyButton:active{
+    color: white;
+    background-color:darkolivegreen;
+}
+
+.register-form label{
+    color: aliceblue;
+
+}
+.register-form input{
+    margin-bottom: 5px;
+    width: 430px;
+    height: 40px;
+    border-radius: 0px;
+}
