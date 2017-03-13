@@ -1,21 +1,23 @@
-function getData(x, y) {
-    var xArr = document.getElementById('xArray').value;
-    var yArr = document.getElementById('yArray').value;
-        xArr = xArr.split(',');
-        yArr = yArr.split(',');
-    document.getElementById('try').innerHTML = xArr;
-    //    var xArr = [1, 2, 3],
-    //        yArr = [1, 3, 5];
-    console.log(typeof(xArr));
-    console.log((xArr));
-    console.log(typeof(yArr));
-}
+var button = document.getElementById('button'),
+    xArr = [],
+    yArr = [];
+
+document.getElementById('button').onclick = function() {
+        xArr = document.getElementById('xArray').value.split(',');
+        yArr = document.getElementById('yArray').value.split(',');
+		console.log(discretization(xArr, yArr));
+};
 
 function discretization(x, y) {
+//    if((x.length && y.length) == 0) {
+//         x = [1, 2, 3];
+//         y = [1, 3, 5];
+//    }
+
     var y = y.reverse();
-    var results = [];
-    var sum = 0;
-    var sLength = x.length + y.length - 1;
+        results = [];
+        sum = 0;
+        sLength = x.length + y.length - 1;
 
     for (var m = 0; m < sLength; ++m) {
         for (var k = 0; k < sLength; ++k) {
@@ -26,9 +28,7 @@ function discretization(x, y) {
         results.push(sum);
         sum = 0;
     }
-    return results;
+    document.getElementById('result').value = results;
 }
 
-window.onload = function() {
-    document.getElementById('result').innerHTML = getData(xArr, yArr);
-}
+console.log()
