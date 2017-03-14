@@ -1,16 +1,15 @@
-body, html{
-    background-color:#232832;
+body, html {
+    background-color: #232832;
     font-family: monospace, sans-serif;
     font-size: 18px;
-
 }
 
-h1, p{
+h1 {
     text-align: center;
     color: white;
 }
 
-#result{
+#result {
     margin-bottom: 5px;
     width: 430px;
     height: 40px;
@@ -20,7 +19,7 @@ h1, p{
     border-radius: 0px;
 }
 
-.register-form{
+.data-form {
     font-size: 16px;
     left: 50%;
     top: 45%;
@@ -30,30 +29,32 @@ h1, p{
     transform: translate3d(-50%, -50%, 0);
 }
 
-.applyButton{
+.applyButton {
     height: 50px;
     width: 430px;
-    background-color:yellowgreen;
+    background-color: yellowgreen;
     border-radius: 0px;
     font-size: 18px;
-    color:white;
+    color: white;
     border: none !important;
     margin-bottom: 5px;
 }
-.applyButton:hover{
+
+.applyButton:hover {
     color: white;
-    background-color:darkolivegreen;
-}
-.applyButton:active{
-    color: white;
-    background-color:darkolivegreen;
+    background-color: darkolivegreen;
 }
 
-.register-form label{
+.applyButton:active {
+    color: white;
+    background-color: darkolivegreen;
+}
+
+.data-form label {
     color: aliceblue;
-
 }
-.register-form input{
+
+.data-form input {
     margin-bottom: 5px;
     width: 430px;
     height: 40px;
