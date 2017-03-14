@@ -11,9 +11,8 @@ function discretization(x, y) {
 
     for (var m = 0; m < sLength; ++m) {
         for (var k = 0; k < sLength; ++k) {
-            if (x[k] !== undefined && y[m - k] !== undefined) {
+            if (x[k] !== undefined && y[m - k] !== undefined)
                 sum += x[k] * y[m - k];
-            }
         }
         results.push(sum);
         sum = 0;
